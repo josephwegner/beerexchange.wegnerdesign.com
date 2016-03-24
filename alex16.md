@@ -2,6 +2,7 @@
 layout: beer_description
 background: beercat.gif
 background_size: 60px
+title: I don't understand fancy beer
 ---
 
 # The "I don't understand fancy beer" package
