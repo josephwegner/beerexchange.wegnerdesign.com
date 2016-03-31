@@ -76,6 +76,21 @@ Once again, this beer will have some fruity flavor to it, specifically lemon. It
 
 Wunderbar.
 
+## El Salvador Las Ninfas Pacamara
+
+### By [Bow Truss Coffee Roasters](http://bowtruss.com/)
+
+Chicago is not a coffee town. Like, we don't have any world-renowned coffee like Seattle or San Francisco do. That said, we do have a couple very good roasters. They're small, but the competition is fierce.
+
+Intelligentsia is the goto. Some 7-Elevens even carry Intelligentsia. They've been on Conan. But, kinda like Two Brothers, their coffee is a little bit meh.
+
+Half Wit is really good. Probably the most popular among actual coffee snobs in the city.
+
+But Bow Truss is my jam. Their coffee shops are cute and small, and they're clearly in the game for good roasting and not your "daily coffee shop" kind of thing. They have a really wide variety of different roasts, and everything I've tried is delicious.
+
+This specific one I haven't tried, but you can read the bag and figure it out. I chose it because it sounds like it's a lighter roast (I abhor dark roast coffees), but isn't some weird fruity thing. Nutty. Toffee...y. Whatever the heck HERBACEOUS means.
+
+I think you'll love it.
 
 
 
