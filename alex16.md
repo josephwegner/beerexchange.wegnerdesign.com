@@ -80,6 +80,8 @@ Wunderbar.
 
 ### By [Bow Truss Coffee Roasters](http://bowtruss.com/)
 
+![This is what happened when I googled "Herbacious"](http://uhaweb.hartford.edu/mcohen/bio_123/stems/img020.gif)
+
 Chicago is not a coffee town. Like, we don't have any world-renowned coffee like Seattle or San Francisco do. That said, we do have a couple very good roasters. They're small, but the competition is fierce.
 
 Intelligentsia is the goto. Some 7-Elevens even carry Intelligentsia. They've been on Conan. But, kinda like Two Brothers, their coffee is a little bit meh.
