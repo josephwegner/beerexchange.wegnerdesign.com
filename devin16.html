@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
+      function getParameterByName(name, url) {
+        if (!url) {
+          // ENCRYPTION IM SO AWESOME
+          // Just base 64 the parameters and put two random character before it, for instance
+          //
+          // jkc29kYT1mYXlnbyZmYWN0PTM=
+          // decodes to
+          // soda=faygo&fact=3
+          //
+          // lololololol 1337 security!
+          var code = getParameterByName('code', window.location.href);
+
+          url = atob(code.substr(2))
+        }
+
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]?" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        console.log(results);
+        if (!results) return null;
+        if (!results[2]) return '';
+
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      } 
+
+      var facts = {
+        'greenriver': [
+          'For a drink that\'s fine without a kick\r\n'+
+            'Try Green River\r\n'+
+            'It\'s the only soft drink you should pick\r\n'+
+            'Try Green River',
+          'Green River was introduced in 1919 by Schoenhofen Edelweiss Brewing Company of Chicago',
+          'Green River was introduced during the prohibition, but stayed alive once prohibition was lifted'
+        ],
+        'vernors': [
+          'Vernors is the oldest surviving ginger ale brand in America',
+          'You know it\'s Vernors if you cough as you go to take your first sip. It\'s strong!',
+          'The Vernor\'s mascot is a gnome. His name is Woody'
+        ],
+        'sprechers': [
+          'Sprecher\'s was Milwakuee\'s first craft brewery after prohibition',
+          'Sprecher\'s has 13 year-round beers, 7 seasonal beers, and 8 limited release beers... but still produces more root beer than any alcoholic variant.',
+          'A contestant on the TV show Deal or No Deal won a lifetime supply of Sprecher\'s. That\'s alotta root beer!'
+        ],
+        'faygo': [
+          'The founders of Faygo were originally Russian bakers, and the original recipes were based on cake frosting!',
+          'Faygo root bear won "best tasting American root bear" in 2009',
+          'The Insane Clown Posse are very vocal fans of Faygo'
+        ],
+        'dadjokes': [
+          'I just ate a frozen apple. Hardcore.',
+          'RIP boiled water\r\n\r\n'+
+            'You will be mist.',
+          'Past, present, and future walked into a bar.... It was tense.'
+        ]
+      }
+
+      var soda = getParameterByName('soda');
+      var fact = parseInt(getParameterByName('fact')) - 1;
+
+      var message = false;
+      if(facts[soda] && facts[soda][fact]) {
+        message = facts[soda][fact];
+      }
+
+      if(message) {
+        var url = 'https://f64e1cc7-0c8a-46dd-b434-81b09eaf0bf3.trayapp.io?message=' + encodeURIComponent(message);
+        $(document).ready(function() {
+          var script = $("<script>");
+          $(script).attr('src', url);
+          $("body").append(script);
+        });
+      } else {
+        console.log('fail');
+        $(document).ready(function() {
+          $("body").css('background-image', "url('https://media.giphy.com/media/d3MLsq1VniMe81Xi/giphy.gif')")
+            .css('background-size', 'contain')
+            .css('background-repeat', 'no-repeat')
+            .css('background-position', 'center');
+        });
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
