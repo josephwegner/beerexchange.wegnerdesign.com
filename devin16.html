@@ -20,7 +20,7 @@
         name = name.replace(/[\[\]]/g, "\\$&");
         var regex = new RegExp("[?&]?" + name + "(=([^&#]*)|&|#|$)"),
             results = regex.exec(url);
-        console.log(results);
+        
         if (!results) return null;
         if (!results[2]) return '';
 
@@ -65,6 +65,8 @@
       var message = false;
       if(facts[soda] && facts[soda][fact]) {
         message = facts[soda][fact];
+      } else if(getParameterByName('message')) {
+        message = getParameterByName('message');
       }
 
       if(message) {
